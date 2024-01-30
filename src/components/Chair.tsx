@@ -21,7 +21,7 @@ type GLTFResult = GLTF & {
 };
 
 export default function Chair(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('./models/chair.glb') as GLTFResult;
+  const { nodes } = useGLTF('./models/chair.glb') as GLTFResult;
 
   const leatherTextureStore = useLeatherTextureStore();
   const fabricTextureStore = useFabricTextureStore();
